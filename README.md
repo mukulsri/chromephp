@@ -21,3 +21,11 @@ This library allows you to log variables to the Chrome console.
 
 More information can be found here:
 http://www.chromelogger.com
+
+# for wordpress
+function get_current_line_number() {
+    $trace = debug_backtrace();
+    return $trace[0]['line'];
+}
+
+echo "The current line number is: " . get_current_line_number();
